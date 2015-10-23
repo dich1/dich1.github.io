@@ -2,15 +2,50 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <!-- 互換表示をさせないために設定するmetaタグ -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- レスポンシブ・ウェブデザインにするために必要なmetaタグ -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>伊藤 大智</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- BootstrapのCSS読み込み -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  　<!-- BootstrapのJS読み込み -->
+  　<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="selected">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="logo">
+        <img src="profile.jpg" alt="" />
+        <h1>伊藤 大智</h1>
+      </div>
+    </header>
+    <div class="container">
+      <section>
+        <h2>About</h2>
+        <h3>自己紹介</h3>
+        <p>伊藤 大智</p>
+        <p>茨城県ひたちなか市出身。プログラミングの勉強をしています。</p>
+        <p><span class="red">Ruby on Rails</span> を使えるようにするためブートキャンプを受講しています。</p>
+        <p>ポートフォリオを見て気になった方は、<a href="contact.html">Contact</a>よりご連絡お願い致します。</p>
+        <h3>リンク</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/daichi.itoh.77" target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com/daich125" target="_blank">Twitter</a></li>
+        </ul>
+      </section>
+      <footer>
+        <p>&copy; 2015 Daichi Itoh.</p>
+      </footer>
+    </div>
   </body>
 </html>
