@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- レスポンシブ・ウェブデザインにするために必要なmetaタグ -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ひたちなか市,Ruby,skate">
     <title>伊藤 大智</title>
     <link rel="stylesheet" href="index.css" />
     <!-- BootstrapのCSS読み込み -->
@@ -16,22 +17,51 @@
   　<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="selected">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+<!-- Wrap all page content here -->
+<div id="wrap">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Daichi Itoh | about</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
         </ul>
-      </nav>
-      <div id="logo">
+      </div>
+      <!--/.nav-collapse -->
+    </di>
+  </div>  
+  <!-- アイコン画像 -->
+    <header>
+  <div id="logo">
         <img src="profile.jpg" alt="" />
         <h1>伊藤 大智</h1>
       </div>
     </header>
-    <div class="container">
-      <section>
-        <h2>About</h2>
+  <!-- Begin page content -->    
+      <div class="center-container">
+        <section>
         <h3>自己紹介</h3>
         <p>伊藤 大智</p>
         <p>茨城県ひたちなか市出身。プログラミングの勉強をしています。</p>
@@ -39,11 +69,29 @@
         <p>ポートフォリオを見て気になった方は、<a href="contact.html">Contact</a>よりご連絡お願い致します。</p>
         <h3>リンク</h3>
         <ul>
+          <li><a href="https://github.com/dich1" target="_blank">github</a></li>
           <li><a href="https://www.facebook.com/daichi.itoh.77" target="_blank">Facebook</a></li>
           <li><a href="https://twitter.com/daich125" target="_blank">Twitter</a></li>
         </ul>
       </section>
-      <footer>
+    <div class="center-row">
+      <div class="col-xs-6 bg-one text-center"><h2>city</h2></div>
+      <div class="col-xs-6 bg-two text-center"><h2>skate</h2></div>
+    </div>
+    <div class="center-row">
+      <div class="col-xs-6 bg-three text-center"><h2>coconut oil</h2></div>
+      <div class="col-xs-6 bg-four text-center"><h2>kendo</h2></div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container">
+    <p>&nbsp;</p>
+    <p class="lead">@<a href="">daich125912@gmail.com</a></p>
+  </div>
+</div>
+<footer>
         <p>&copy; 2015 Daichi Itoh.</p>
       </footer>
     </div>
