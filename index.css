@@ -12,10 +12,10 @@
   
   header {
     background-image: url("bg.jpg");
-    background-position: center center;
+    background-position: right top;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 200px;
+    padding-bottom: 400px;
   }
   
   #logo {
