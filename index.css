@@ -29,7 +29,7 @@
     border-radius: 100%;
   }
   
-  #logo h1 {
+  #logo h1, h2 {
     letter-spacing: 0.15em;
     color: #fff;
     text-shadow: 1px 1px 0px #000;
@@ -88,15 +88,23 @@
   
   .bg-one {
     background:#efefef url('kochia.jpg');
+    padding: 150px 0;
   }
   .bg-two {
     background:#efefef url('ktsb.jpg');
+    padding: 150px 0;
   }
   .bg-three {
     background:#efefef url('coconut oil.jpg');
+    background-position: center center;
+    background-size: cover;
+    padding: 150px 0;
   }
   .bg-four {
     background:#efefef url('kendo.jpg');
+    background-position: center center;
+    background-size: cover;
+    padding: 150px 0;
   }
   
   
